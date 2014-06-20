@@ -2,7 +2,7 @@
 Wordpress Blogger Blog Post Editor using javafx. 
 
 #Jre Minimum
-v1.8.9_05
+v1.8.0_05
 
 #Download
 http://sourceforge.net/projects/blogposteditor/
