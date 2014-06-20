@@ -1,0 +1,93 @@
+.editorframe{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.editor-control{
+margin-bottom: 10px;
+}
+.editor{
+	color: #000000;
+	border-radius : 10px; 
+	width:100%; 
+	height:200px;
+	background: #fff;
+	border : solid 1px #ccc;
+	padding: 10px;
+	overflow: auto;  
+}
+.codemirorframe{
+	background:#cccccc;
+	width:100%; 
+	border-radius: 10px;
+	border: solid 1px #cccccc;
+	position:fixed;
+	bottom:0px;
+	right:0px;
+}
+h3{
+	margin-left: 10px;
+	margin-righ: 10px;
+	margin-top : 2px;
+	margin-bottom: 2px;
+	text-align: center;
+}
+
+
+/*Option SLider*/
+
+html{
+			overflow: hidden;
+		}
+		.post_option{
+			position: absolute;
+			right: -300px;
+			top: 0px;
+			bottom: 0px;
+			border-left: solid 1px #ccc;
+			width: 300px; 
+			-webkit-transition:right 0.5s; /* For Safari 3.1 to 6.0 */
+				transition:right 0.5s;
+			z-index: 300;
+		}
+		
+		.post_option:hover {
+			right: 0px;
+		} 
+		.title_option{
+			position: absolute;
+			left: -23px;
+			width: 323px;
+			height: 33px;
+			background: #fff url('panah.png') no-repeat; 
+			display: inline-block;
+			cursor: pointer;
+			text-align: center;
+		}
+		.inner_title_option{
+			width: 300px;
+			height: 33px;
+			margin-left: 23px;
+			border-bottom: 1px #2dadaf solid; 
+		}
+		.content_option{
+			position : absolute;
+			top: 33px;
+			bottom: 0px;
+			left: 0px;
+			overflow: auto;
+			padding: 10px;
+			right: 0px;
+			background: #eee;
+		}
+		 
+		.content_option input{
+			height: 33px;
+			width: 285px;
+			margin-top: 5px;
+		}
+		.catoption{ 
+			left: 20px;
+			max-height: 200px;
+			overflow: auto;
+		}

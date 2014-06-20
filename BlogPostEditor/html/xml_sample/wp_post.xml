@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<methodCall>
+<methodName>metaWeblog.[[rxml]type/]</methodName>
+	<params>
+			<param><value><int>[[rxml]id/]</int></value></param>
+			<param><value><string>[[rxml]user/]</string></value></param>
+			<param><value><string>[[rxml]pass/]</string></value></param>
+			<param>
+			<value>
+				<struct>
+					<member><name>title</name><value><string><![CDATA[[[rxml]title/]]]></string></value></member>
+					<member><name>description</name><value><string><![CDATA[[[rxml]body/]]]></string></value></member>
+					<member><name>mt_allow_comments</name><value><int>[[rxml]allow_comment/]</int></value></member>
+					<member><name>mt_allow_pings</name><value><int>[[rxml]allow_ping/]</int></value></member>
+					<member><name>post_type</name><value><string>[[rxml]post_type/]</string></value></member>
+					<member><name>dateCreated</name><value><dateTime.iso8601>[[rxml]time/]</dateTime.iso8601></value></member>
+					[dataoptional/]
+					<member><name>mt_keywords</name>
+						<value>
+							<array>
+								<data>
+									[[rxml]keywords/]
+								</data>
+							</array>
+						</value>
+					</member>
+					<member><name>categories</name>
+						<value>
+							<array>
+								<data>
+									[[rxml]cats/]
+								</data>
+							</array>
+						</value>
+					</member>
+				</struct>
+			</value>
+			</param>
+			<param>
+				<value>
+					<boolean>1</boolean>
+				</value>
+			</param>
+	</params>
+</methodCall>

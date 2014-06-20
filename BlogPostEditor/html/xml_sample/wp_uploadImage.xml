@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<methodCall>
+<methodName>wp.uploadFile</methodName>
+	<params>
+			<param><value><int>0</int></value></param>
+			<param><value><string>[[rxml]user/]</string></value></param>
+			<param><value><string>[[rxml]pass/]</string></value></param>
+			<param>
+			<value>
+				<struct>
+					<member><name>name</name><value><string>[[rxml]filename/]</string></value></member>
+					<member><name>type</name><value><string>[[rxml]filetype/]</string></value></member>
+					<member><name>bits</name><value><base64><![CDATA[[[rxml]base64file/]]]></base64></value></member>
+					<boolean>1</boolean>
+				</struct>
+			</value>
+			</param>
+	</params>
+</methodCall>

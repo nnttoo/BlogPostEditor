@@ -1,0 +1,88 @@
+.resizframe { 
+	position: absolute;
+	border: solid 2px #cc0;  
+	background: #333;
+	display: none;
+	}
+.resizframe .resize_handler{
+	position: absolute;
+	border: solid 1px #ccc;
+	background: #fff;
+	width: 6px;
+	height : 6px; 
+}
+.resize_handler.rh_tl {
+	left: -5px; 
+	top: -5px;
+	cursor: nw-resize;
+}
+.resize_handler.rh_tc {
+	top: -5px;
+	left: 50%;
+	margin-left: -3px;
+	cursor: n-resize;
+}
+
+.resize_handler.rh_tr {
+	top: -5px;
+	right: -5px;
+	cursor: ne-resize;
+}
+
+.resize_handler.rh_cl {
+	top: 50%;
+	left: -5px;
+	margin-top: -3px;
+	cursor: e-resize;
+}
+
+.resize_handler.rh_cr {
+	top: 50%;
+	margin-top: -3px;
+	right: -5px;
+	cursor: e-resize;
+}
+.resize_handler.rh_bl {
+	bottom: -5px;
+	left: -5px;
+	cursor: ne-resize;
+}
+.resize_handler.rh_bc {
+	bottom: -5px;
+	left: 50%;
+	margin-left: -3px;
+	cursor: n-resize;
+}
+.resize_handler.rh_br {
+	bottom: -5px;
+	right: -5px;
+	cursor: nw-resize;
+}
+.resizframe .workspace_resize_tl,
+.resizframe .workspace_resize_br,
+.resizframe .workspace_resize_tr,
+.resizframe .workspace_resize_bl{
+	border: dashed 2px #80f;
+}
+
+.resizframe .workspace_resize_tl {
+	position : absolute;
+	top : 0px;
+	left : 0px;
+}
+.resizframe .workspace_resize_br {
+	position : absolute;
+	bottom : 0px;
+	right : 0px;
+}
+
+.resizframe .workspace_resize_tr {
+	position : absolute;
+	top : 0px;
+	right : 0px;
+}
+.resizframe .workspace_resize_bl {
+	position : absolute;
+	bottom : 0px;
+	left : 0px;
+}

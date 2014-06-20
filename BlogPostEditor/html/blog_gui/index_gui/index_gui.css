@@ -1,0 +1,108 @@
+		html, body { 
+		height:100%; 
+		margin: 0px;
+		padding: 0px;
+		}
+		.menutop{
+			background: linear-gradient(#fff, #d7e0e3);	 
+		}
+		.workFrame{ 
+			position: absolute; 
+	       	top: 30px; /* Header Height */
+	       	bottom: 0px; /* Footer Height */ 
+			width: 100%;
+		}
+		
+		.accList{ 			
+			position: absolute;
+			width: 200px; 
+			height: 100%; 
+			border-right: solid 1px #ccc;
+			overflow: auto;
+		}
+		
+		.postlist{		
+			position: absolute;
+			left: 200px;
+			right: 0px;
+			top: 0px; 
+			height: 100%; 
+		}
+		/*parent style END*/
+		
+		.listblog{
+			margin-top: 10px;
+		}
+		.accname{
+			background: linear-gradient(#fff, #d7e0e3);	
+			padding: 5px;
+			margin-top: 5px;
+			cursor: pointer;
+		} 
+		.listblog_fitur li{
+			cursor: pointer;
+		}
+		.listblog_fitur li:hover{
+			text-decoration: underline;
+		}
+		
+		
+		
+		/*LeftBar style END*/
+		
+		.activeblogtitle{
+			text-align: center;
+			border-bottom: double 4px #ccc;
+		}
+		
+		.postlist_content{
+			overflow: auto;
+			position: absolute;
+			top: 80px;
+			bottom: 50px; 
+			width: 100%;
+		}
+		
+		.tiappost{
+			background: linear-gradient(#bbe6f3, #d7e0e3);	
+			padding: 5px;
+			margin: 3px;
+			cursor: pointer;
+		}
+		.tiappost .posttitle{
+			font-weight: bold;
+			font-size: 13px;
+		} 
+		.tiappost span{		
+			display:  table-cell;  
+			font-size: 12px; 
+			padding-right: 10px; 
+		}
+		.post_status{
+			padding-left: 20px;
+			color: #003333;
+		}
+		.date {		
+			color: #447808;
+		}
+		.pagenavi_absolute_frame{
+			position: absolute;
+			bottom: 5px;
+			left: 0px; 
+			padding-left: 10px;  
+		} 
+		.menupost{
+			padding-left: 10px;
+			padding-right:10px; 
+		}
+		
+		.dbpostid{
+			display:  table-cell;  
+			min-width: 30px; 
+			line-height: 100%;
+			vertical-align: middle; 
+		}
+		.titledate_container{		
+			display:  table-cell;  
+		}
+		/*Rightbar style END*/

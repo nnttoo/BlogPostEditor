@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<methodCall>
+<methodName>metaWeblog.--BTOOLS_XML_REQ_TYPE--</methodName>
+	<params>
+		<param><value><int>--BTOOLS_ID_REUIRED--</int></value></param>
+		<param><value><string>--USERBTOOLS--</string></value></param>
+		<param><value><string>--PASSBTOOLS--</string></value></param>
+		<param><value><string>--MAXRESULT--</string></value></param>
+		<param><value><boolean>1</boolean></value></param>
+	</params>
+</methodCall>
