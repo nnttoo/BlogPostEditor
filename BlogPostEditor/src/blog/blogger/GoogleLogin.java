@@ -104,8 +104,7 @@ public class GoogleLogin{
 						
 						String currentUrl = webEngine.getLocation();
 						boolean matchG = currentUrl.matches("https:\\/\\/accounts.google.com\\/ServiceLogin\\?service.*"); 
-						if(matchG){
-						System.out.println(currentUrl);
+						if(matchG){ 
 						webEngine.executeScript("document.getElementById('Email').value='"+userconfig.username+"'; "
 										+ "document.getElementById('Passwd').value='"+userconfig.password+"'; "
 										+ "document.getElementById('gaia_loginform').submit(); "

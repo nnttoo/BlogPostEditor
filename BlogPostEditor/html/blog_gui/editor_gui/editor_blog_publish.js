@@ -8,12 +8,10 @@ var publishPost = function(titleElemIn,editorElemIn, keywordElemIn ,categoryElem
 	this.postidElem = postidElemIn;
 	this.permalinkElem = permalinkElemIn;
 	this.type = type;
-	
+	this.savaTodraft("save");
 	if(type == 'publish'){
 		this.uploadImage(); 
-	} else {
-		this.savaTodraft();
-	}
+	} 
 }; 
  
 publishPost.prototype.uploadImage = function(){
@@ -72,7 +70,7 @@ publishPost.prototype.uploadImage = function(){
 						);
 				
 			} else {
-				myvar.savaTodraft();
+				myvar.savaTodraft("publish");
 			}
 		}
 		imageUploadLoop(0);
@@ -86,7 +84,7 @@ publishPost.prototype.htmlEntity = function(text){
 	return div.html();
 };
 
-publishPost.prototype.savaTodraft = function(){
+publishPost.prototype.savaTodraft = function(typesave){
 	var postTitle = this.htmlEntity(this.titleElem.val());
 	var postBody = this.editorElem.html();
 	var postKeyword = this.htmlEntity(this.keywordElem.val());
@@ -106,7 +104,7 @@ publishPost.prototype.savaTodraft = function(){
 				$("#loading").append(text + "<br/>");
 			},
 			finish : function(){ 
-				if(myvar.type == 'publish'){
+				if(typesave == 'publish'){
 					java.publish({
 						finish: function(){ 
 							java.closeEditor();
